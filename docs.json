@@ -1,72 +1,104 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "Learning Platform",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "quickstart",
+              "get-started/first-sign-in",
+              "get-started/accounts-and-roles"
+            ]
+          },
+          {
+            "group": "For Students",
+            "icon": "graduation-cap",
+            "pages": [
+              "students/dashboard",
+              "students/join-class",
+              "students/assignments",
+              "students/practice",
+              "students/ai-tutor",
+              "students/progress",
+              "students/profile"
+            ]
+          },
+          {
+            "group": "For Teachers",
+            "icon": "chalkboard-user",
+            "pages": [
+              "teachers/dashboard",
+              "teachers/create-class",
+              "teachers/manage-classes",
+              "teachers/class-codes",
+              "teachers/create-assignment",
+              "teachers/url-and-file-assignments",
+              "teachers/track-completion",
+              "teachers/grading-and-feedback",
+              "teachers/analytics",
+              "teachers/announcements"
+            ]
+          },
+          {
+            "group": "Learning System",
+            "icon": "sparkles",
+            "pages": [
+              "learning/subjects",
+              "learning/ai-tutor",
+              "learning/personalized-practice",
+              "learning/progress-tracking",
+              "learning/academic-integrity"
+            ]
+          },
+          {
+            "group": "Administration",
+            "icon": "shield-halved",
+            "pages": [
+              "admin/overview",
+              "admin/user-management",
+              "admin/content-moderation",
+              "admin/security-and-privacy",
+              "admin/notifications"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Reference",
+            "icon": "book",
+            "pages": [
+              "reference/data-model",
+              "reference/permissions",
+              "reference/supported-file-types",
+              "reference/accessibility",
+              "reference/integrations"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "styling": {
+    "eyebrows": "breadcrumbs"
   }
 }
